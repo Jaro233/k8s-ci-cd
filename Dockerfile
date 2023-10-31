@@ -1,5 +1,5 @@
 FROM  centos:latest
-RUN yum update -y
+RUN rm -r /var/cache/dnf
 RUN yum install httpd zip unzip -y 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
