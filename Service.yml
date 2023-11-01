@@ -5,8 +5,8 @@ metadata:
   labels:
     app: mrdevops
 spec:
-  ports:
-  type: LoadBalancer  
+  type: LoadBalancer
+  ports:  
     - port: 8080                               
       targetPort: 80                    
   selector:
